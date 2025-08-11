@@ -1,1 +1,16 @@
-<!doctype html><meta http-equiv="refresh" content="0;url=about:blank">
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CTF Redirect PoC</title>
+  <script>
+    // DOMContentLoaded 이전에 즉시 네비게이션: Playwright가 최종 URL을 about:blank로 보게 함
+    location.replace('about:blank');
+  </script>
+  <!-- 메타 리프레시는 보조 수단 (혹시 스크립트가 막힐 경우) -->
+  <meta http-equiv="refresh" content="0;url=about:blank">
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
